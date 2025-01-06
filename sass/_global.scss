@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+// global styles for the body
 body{
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-size: $fs-13;
@@ -12,4 +13,7 @@ body{
   line-height: $lh-18;
   color: $grayish-blue-200;
   background: $grayish-blue-100;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
 }

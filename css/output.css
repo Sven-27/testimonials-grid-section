@@ -12,6 +12,9 @@ body {
   line-height: 18px;
   color: hsl(217, 19%, 35%);
   background: hsl(210, 46%, 95%);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
 }
 
 /*# sourceMappingURL=output.css.map */
