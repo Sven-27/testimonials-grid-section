@@ -1,0 +1,15 @@
+// simple reset and global styles
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: $fs-13;
+  font-weight: $fw-500;
+  line-height: $lh-18;
+  color: $grayish-blue-200;
+  background: $grayish-blue-100;
+}

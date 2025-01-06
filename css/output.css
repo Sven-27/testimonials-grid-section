@@ -1,5 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  color: #ff0000;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 18px;
+  color: hsl(217, 19%, 35%);
+  background: hsl(210, 46%, 95%);
 }
 
 /*# sourceMappingURL=output.css.map */
