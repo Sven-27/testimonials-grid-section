@@ -1,0 +1,9 @@
+@function text-clr($color) {
+  @if (lightness($color) > 52) {
+    @return $grayish-blue-200;
+  }
+
+  @else {
+    @return $white;
+  }
+}

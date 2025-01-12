@@ -16,4 +16,10 @@ body{
   display: grid;
   place-items: center;
   min-height: 100vh;
+  padding: 4rem 2rem;
+}
+
+img{
+  border-radius: 50%;
+  width: 1.75rem;
 }

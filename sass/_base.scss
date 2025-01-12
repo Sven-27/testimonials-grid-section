@@ -1,0 +1,18 @@
+main{
+   article{
+      &.testimonial-one{
+        background: $violet-200;
+
+        h1{
+          color: text-clr($violet-200);
+        }
+      }
+      &.testimonial-three{
+        background: $white;
+
+        h1 {
+          color: text-clr($white);
+        }
+      }
+   }
+}
