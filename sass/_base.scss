@@ -1,13 +1,21 @@
 main{
    article{
      border-radius: 8px;
+     padding: 1.5rem;
     figure{
       display: flex;
 
+
+      figcaption{
+        padding-left: 1rem;
+      }
     }
-    padding: 2rem;
       &.testimonial-one{
         background: $violet-200;
+
+        img{
+          border: 2px solid $violet-100
+        }
 
         h1, p{
           color: text-clr($violet-200);
@@ -31,6 +39,9 @@ main{
       &.testimonial-four {
         background: $blackish-blue;
 
+        img{
+          border: 2px solid $violet-200;
+        }
 
         h1, p{
           color: text-clr($blackish-blue);

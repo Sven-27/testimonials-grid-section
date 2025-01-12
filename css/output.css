@@ -106,7 +106,7 @@ body {
   display: grid;
   place-items: center;
   min-height: 100vh;
-  padding: 4rem 2rem;
+  padding: 4rem 1.5rem;
 }
 
 img {
@@ -120,7 +120,7 @@ p {
 }
 
 span {
-  color: hsla(0, 0%, 81%, 0.5);
+  color: hsla(0, 0%, 0%, 0.5);
   font-size: 0.6875rem;
   line-height: 11px;
 }
@@ -128,24 +128,32 @@ span {
 h1 {
   font-size: 1.25rem;
   font-weight: 600;
-  line-height: auto;
+  line-height: 1.2;
+  max-width: 32ch;
+  margin-block: 1rem;
 }
 
 quote {
   font-size: 0.8125rem;
   line-height: 18px;
-  color: hsla(0, 0%, 81%, 0.7);
+  color: hsla(0, 0%, 0%, 0.7);
 }
 
 main article {
   border-radius: 8px;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 main article figure {
   display: flex;
 }
+main article figure figcaption {
+  padding-left: 1rem;
+}
 main article.testimonial-one {
   background: hsl(263, 55%, 52%);
+}
+main article.testimonial-one img {
+  border: 2px solid hsl(264, 82%, 70%);
 }
 main article.testimonial-one h1, main article.testimonial-one p {
   color: hsl(0, 0%, 100%);
@@ -164,6 +172,9 @@ main article.testimonial-three h1, main article.testimonial-three p, main articl
 }
 main article.testimonial-four {
   background: hsl(217, 30%, 14%);
+}
+main article.testimonial-four img {
+  border: 2px solid hsl(263, 55%, 52%);
 }
 main article.testimonial-four h1, main article.testimonial-four p {
   color: hsl(0, 0%, 100%);

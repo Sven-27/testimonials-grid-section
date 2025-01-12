@@ -16,7 +16,7 @@ body{
   display: grid;
   place-items: center;
   min-height: 100vh;
-  padding: 4rem 2rem;
+  padding: 4rem 1.5rem;
 }
 
 img{
@@ -30,7 +30,7 @@ p{
 }
 
 span{
-  color: $gray-opacity-50;
+  color: $white-opacity-50;
   font-size: $fs-11;
   line-height: $lh-11;
 }
@@ -38,11 +38,13 @@ span{
 h1{
   font-size: $fs-20;
   font-weight: $fw-600;
-  line-height: $lh-auto;
+  line-height: 1.2;
+  max-width: 32ch;
+  margin-block: 1rem;
 }
 
 quote{
   font-size: $fs-13;
   line-height: $lh-18;
-  color: $gray-opacity-70;
+  color: $white-opacity-70;
 }
