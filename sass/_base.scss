@@ -1,17 +1,39 @@
 main{
    article{
+     border-radius: 8px;
+    figure{
+      display: flex;
+
+    }
+    padding: 2rem;
       &.testimonial-one{
         background: $violet-200;
 
-        h1{
+        h1, p{
           color: text-clr($violet-200);
         }
       }
-      &.testimonial-three{
+      &.testimonial-two {
+        background: $grayish-blue-200;
+
+        h1, p{
+          color: text-clr($grayish-blue-200);
+        }
+      }
+      &.testimonial-three, 
+      &.testimonial-five {
         background: $white;
 
-        h1 {
+        h1, p{
           color: text-clr($white);
+        }
+      }
+      &.testimonial-four {
+        background: $blackish-blue;
+
+
+        h1, p{
+          color: text-clr($blackish-blue);
         }
       }
    }

@@ -23,3 +23,26 @@ img{
   border-radius: 50%;
   width: 1.75rem;
 }
+
+p{
+  font-size: $fs-13;
+  line-height: $lh-13;
+}
+
+span{
+  color: $gray-opacity-50;
+  font-size: $fs-11;
+  line-height: $lh-11;
+}
+
+h1{
+  font-size: $fs-20;
+  font-weight: $fw-600;
+  line-height: $lh-auto;
+}
+
+quote{
+  font-size: $fs-13;
+  line-height: $lh-18;
+  color: $gray-opacity-70;
+}
