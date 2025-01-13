@@ -120,7 +120,7 @@ p {
 }
 
 span {
-  color: hsla(0, 0%, 0%, 0.5);
+  color: hsla(0, 0%, 100%, 0.5);
   font-size: 0.6875rem;
   line-height: 11px;
 }
@@ -130,18 +130,23 @@ h1 {
   font-weight: 600;
   line-height: 1.2;
   max-width: 32ch;
-  margin-block: 1rem;
+  margin-block: 1.5rem;
 }
 
 quote {
   font-size: 0.8125rem;
   line-height: 18px;
-  color: hsla(0, 0%, 0%, 0.7);
+  color: hsla(0, 0%, 100%, 0.7);
 }
 
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 1.5rem;
+}
 main article {
   border-radius: 8px;
-  padding: 1.5rem;
+  padding: 2rem;
 }
 main article figure {
   display: flex;
@@ -167,6 +172,12 @@ main article.testimonial-two h1, main article.testimonial-two p {
 main article.testimonial-three, main article.testimonial-five {
   background: hsl(0, 0%, 100%);
 }
+main article.testimonial-three span, main article.testimonial-five span {
+  color: hsla(217, 19%, 35%, 0.5);
+}
+main article.testimonial-three quote, main article.testimonial-five quote {
+  color: hsla(217, 19%, 35%, 0.7);
+}
 main article.testimonial-three h1, main article.testimonial-three p, main article.testimonial-five h1, main article.testimonial-five p {
   color: hsl(217, 19%, 35%);
 }
@@ -178,6 +189,26 @@ main article.testimonial-four img {
 }
 main article.testimonial-four h1, main article.testimonial-four p {
   color: hsl(0, 0%, 100%);
+}
+@media only screen and (min-width: 1025px) {
+  main article.testimonial-one {
+    grid-column: 1/span 2;
+  }
+  main article.testimonial-two {
+    grid-column: 3;
+  }
+  main article.testimonial-three {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  main article.testimonial-four {
+    grid-column: 2/span 2;
+    grid-row: 2;
+  }
+  main article.testimonial-five {
+    grid-column: 4;
+    grid-row: 1/span 2;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */

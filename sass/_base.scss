@@ -1,10 +1,15 @@
+// specific styles for the testimonial section
 main{
+  display: grid;
+  
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+
+  gap: 1.5rem;
    article{
      border-radius: 8px;
-     padding: 1.5rem;
+     padding: 2rem;
     figure{
       display: flex;
-
 
       figcaption{
         padding-left: 1rem;
@@ -12,6 +17,7 @@ main{
     }
       &.testimonial-one{
         background: $violet-200;
+        // grid-column: 1 / span 2;
 
         img{
           border: 2px solid $violet-100
@@ -23,6 +29,7 @@ main{
       }
       &.testimonial-two {
         background: $grayish-blue-200;
+        // grid-column: 3;
 
         h1, p{
           color: text-clr($grayish-blue-200);
@@ -32,12 +39,26 @@ main{
       &.testimonial-five {
         background: $white;
 
+        span{
+          color: $grayish-blue-opacity-50;
+        }
+
+        quote{
+          color: $grayish-blue-opacity-70;
+        }
+
         h1, p{
           color: text-clr($white);
         }
       }
+      &.testimonial-three{
+        // grid-column: 1;
+        // grid-row: 2;
+      }
       &.testimonial-four {
         background: $blackish-blue;
+        // grid-column: 2 / span 2;
+        // grid-row: 2;
 
         img{
           border: 2px solid $violet-200;
@@ -45,6 +66,30 @@ main{
 
         h1, p{
           color: text-clr($blackish-blue);
+        }
+      }
+      &.testimonial-five {
+        // grid-column: 4;
+        // grid-row: 1 / span 2;
+      }
+      @media only screen and (min-width: 1025px){
+        &.testimonial-one{
+          grid-column: 1 / span 2;
+        }
+        &.testimonial-two{
+          grid-column: 3;
+        }
+        &.testimonial-three{
+          grid-column: 1;
+          grid-row: 2;
+        }
+        &.testimonial-four{
+          grid-column: 2 / span 2;
+          grid-row: 2;
+        }
+        &.testimonial-five{
+          grid-column: 4;
+          grid-row: 1 / span 2;
         }
       }
    }
