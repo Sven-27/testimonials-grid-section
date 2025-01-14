@@ -1,9 +1,8 @@
 // specific styles for the testimonial section
 main{
   display: grid;
-  
+  width: max-content;
   grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-
   gap: 1.5rem;
    article{
      border-radius: 8px;
@@ -25,6 +24,7 @@ main{
 
         h1, p{
           color: text-clr($violet-200);
+          max-width: 90ch;
         }
       }
       &.testimonial-two {
@@ -73,6 +73,7 @@ main{
         // grid-row: 1 / span 2;
       }
       @media only screen and (min-width: 1025px){
+
         &.testimonial-one{
           grid-column: 1 / span 2;
         }
@@ -92,5 +93,8 @@ main{
           grid-row: 1 / span 2;
         }
       }
-   }
+    }
+  @media only screen and (min-width: 1025px) {
+    grid-template-columns: repeat(4, minmax(14rem, 19rem));
+  }
 }

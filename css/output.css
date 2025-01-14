@@ -103,8 +103,9 @@ body {
   line-height: 18px;
   color: hsl(217, 19%, 35%);
   background: hsl(210, 46%, 95%);
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   padding: 4rem 1.5rem;
 }
@@ -129,8 +130,8 @@ h1 {
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.2;
-  max-width: 32ch;
   margin-block: 1.5rem;
+  min-width: 100%;
 }
 
 quote {
@@ -141,6 +142,7 @@ quote {
 
 main {
   display: grid;
+  width: max-content;
   grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
   gap: 1.5rem;
 }
@@ -162,6 +164,7 @@ main article.testimonial-one img {
 }
 main article.testimonial-one h1, main article.testimonial-one p {
   color: hsl(0, 0%, 100%);
+  max-width: 90ch;
 }
 main article.testimonial-two {
   background: hsl(217, 19%, 35%);
@@ -208,6 +211,11 @@ main article.testimonial-four h1, main article.testimonial-four p {
   main article.testimonial-five {
     grid-column: 4;
     grid-row: 1/span 2;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  main {
+    grid-template-columns: repeat(4, minmax(14rem, 19rem));
   }
 }
 

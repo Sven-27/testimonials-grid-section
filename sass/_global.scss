@@ -13,8 +13,9 @@ body{
   line-height: $lh-18;
   color: $grayish-blue-200;
   background: $grayish-blue-100;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   padding: 4rem 1.5rem;
 }
@@ -39,8 +40,8 @@ h1{
   font-size: $fs-20;
   font-weight: $fw-600;
   line-height: 1.2;
-  max-width: 32ch;
   margin-block: 1.5rem;
+  min-width: 100%;
 }
 
 quote{
