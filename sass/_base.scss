@@ -16,6 +16,19 @@ main{
     }
       &.testimonial-one{
         background: $violet-200;
+        position: relative;
+        z-index: -1;
+
+        &:before{
+          content: '';
+          background: url('../images/bg-pattern-quotation.svg') no-repeat center center;
+          width: 104px;
+          height: 102px;
+          position: absolute;
+          top: 0;
+          right: clamp(1.5rem, 6vw, 12rem);
+          z-index: -2;
+        }
 
         img{
           border: 2px solid $violet-100
@@ -23,6 +36,7 @@ main{
 
         h1, p{
           color: text-clr($violet-200);
+          z-index: 1;
         }
       }
       &.testimonial-two {
@@ -82,6 +96,6 @@ main{
       }
     }
   @media only screen and (min-width: 1025px) {
-    grid-template-columns: repeat(4, minmax(14rem, 17rem));
+    grid-template-columns: repeat(4, minmax(14rem, 16rem));
   }
 }
